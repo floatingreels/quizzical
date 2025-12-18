@@ -33,7 +33,7 @@ export default function Welcome(props) {
     return (
         <section className="welcome">
             <h1 className="quiz-title">Quizzical</h1>
-            <p className="quiz-description">...so you think you know stuff?</p>
+            <p className="quiz-description">...so you think you know stuff? Choose a topic and difficulty and find out!</p>
             <form onSubmit={handleSubmitForm}>
                 <div className="quiz-input-container">
                 <input 
