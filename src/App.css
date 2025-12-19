@@ -51,14 +51,30 @@
 }
 
 .choices-container {
+  border: 2px solid cyan;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to new rows */
   gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .choices-container {
+    gap: 8px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .choices-container {
+    gap: 6px;
+  }
 }
 
 
 .choice-label {
+  flex: 0 0 50px;
   font-family: 'Karla';
   display: inline-block;
   min-width: 100px;
